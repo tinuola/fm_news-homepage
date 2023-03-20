@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   font-family: var(--font);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   min-height: 100vh;
   display: grid;
@@ -39,9 +39,9 @@ main {
     'header header header'
     'main main latest'
     'carousel carousel carousel';
-  gap: 2rem;
+  gap: 1.25rem;
   max-width: calc(100% - 200px);
-  margin: 2rem auto;
+  margin: 2rem auto 4rem auto;
 }
 
 @media (max-width: 1200px) {
@@ -89,7 +89,7 @@ nav ul {
 
 .main-news__headline {
   grid-area: headline;
-  font-size: 3.2rem;
+  font-size: 3.25rem;
   line-height: 1;
   align-self: center;
 }
@@ -121,7 +121,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* gap: 1rem; */
 }
 
 .latest-news h1 {
@@ -152,6 +151,46 @@ button {
 
 .carousel {
   grid-area: carousel;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.carousel-item {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(90px, 1fr) auto;
+  gap: 1rem;
+}
+
+.carousel-item img {
+  grid-column: 1 / 2;
+}
+
+.carousel-item__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.carousel-item__body h2 {
+  font-size: 1.125rem;
+}
+
+.carousel-item__body p:first-child {
+  font-size: 1.5rem;
+  color: var(--gray-blue);
+  font-weight: 800;
+}
+
+.carousel-item__body p:last-child {
+  line-height: 1.5;
+}
+
+.fm-byline-row {
+  padding-bottom: 2rem;
 }
 
 .fm-byline {
