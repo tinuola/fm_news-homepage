@@ -1,4 +1,4 @@
-# Frontend Mentor: Challenge Name
+# Frontend Mentor: News Homepage
 
 Solution to the _[News Homepage](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub)_ challenge on Frontend Mentor.
 
