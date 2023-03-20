@@ -34,7 +34,7 @@ body {
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px 1fr auto;
+  grid-template-rows: 50px 1fr auto;
   grid-template-areas:
     'header header header'
     'main main latest'
@@ -75,18 +75,42 @@ nav ul {
 
 .main-news {
   grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'hero hero'
+    'headline blurb';
+  gap: 1.5rem;
 }
 
 .main-news__hero {
-  /* grid-area: hero; */
+  grid-area: hero;
 }
 
 .main-news__headline {
-  /* grid-area: headline; */
+  grid-area: headline;
+  font-size: 3.2rem;
+  line-height: 1;
+  align-self: center;
 }
 
 .main-news__blurb {
-  /* grid-area: blurb; */
+  grid-area: blurb;
+  font-size: 15px;
+}
+
+.main-news__blurb p {
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+}
+
+button {
+  background-color: var(--primary-red);
+  color: var(--off-white);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 0;
+  padding: 1rem 2.25rem;
 }
 
 .latest-news {
