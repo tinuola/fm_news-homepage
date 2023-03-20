@@ -1,60 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap"
+      rel="stylesheet" />
+    <!-- Project Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>News Homepage | Frontend Mentor</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="sr-only">News Homepage - A Frontend Mentor Project</h1>
+      <header>
+        <img src="" alt="" class="logo" />
+        <nav>
+          <ul>
+            <li class="nav-item">Home</li>
+            <li class="nav-item">New</li>
+            <li class="nav-item">Popular</li>
+            <li class="nav-item">Trending</li>
+            <li class="nav-item">Categories</li>
+          </ul>
+        </nav>
+      </header>
+      <section class="main-news">
+        <img src="" alt="" class="main-news__hero" />
+        <h2 class="main-news__headline">The Bright Future of Web 3.0?</h2>
+        <p class="main-news__blurb">
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <button>Read More</button>
+      </section>
+      <section class="latest-news">
+        <h1>New</h1>
+        <article class="latest-news-item">
+          <h2>Hydrogen VS Electric Cars</h2>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        <article class="latest-news-item">
+          <h2>The Downsides of AI Artistry</h2>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+        <article class="latest-news-item">
+          <h2>Is VC Funding Drying Up?</h2>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </article>
+      </section>
+      <section class="carousel">
+        <article class="carousel-item">
+          <img src="" alt="" />
+          <section class="carousel-item__body">
+            <p>01</p>
+            <h2>Reviving Retro PCs</h2>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </section>
+        </article>
+        <article class="carousel-item">
+          <img src="" alt="" />
+          <section class="carousel-item__body">
+            <p>02</p>
+            <h2>Top 10 Laptops of 2022</h2>
+            <p>Our best picks for various needs and budgets.</p>
+          </section>
+        </article>
+        <article class="carousel-item">
+          <img src="" alt="" />
+          <section class="carousel-item__body">
+            <p>03</p>
+            <h2>The Growth of Gaming</h2>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </section>
+        </article>
+      </section>
+    </main>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    <footer class="fm-byline-row">
+      <p class="fm-byline">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub"
+          target="_blank"
+          >Frontend Mentor</a
+        >
+      </p>
+      <p class="fm-byline">
+        Coded by
+        <a href="https://github.com/tinuola/fm_news-homepage" target="_blank"
+          >TechTinu</a
+        >
+      </p>
+    </footer>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
+
+https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub

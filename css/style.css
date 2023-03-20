@@ -1,26 +1,33 @@
 :root {
-  
+  --primary-orange: hsl(35, 77%, 62%);
+  --primary-red: hsl(5, 85%, 63%);
+  --dark-blue: hsl(240, 100%, 5%);
+  --dark-gray-blue: hsl(236, 13%, 42%);
+  --gray-blue: hsl(233, 8%, 79%);
+  --off-white: hsl(36, 100%, 99%);
+  --font: 'Inter', sans-serif;
 }
 
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
+  font-family: var(--font);
 }
 
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   width: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
-  position: absolute;  
+  position: absolute;
 }
 
 .fm-byline {
-  font-size: .75rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
   line-height: 1.5;
   text-align: center;
