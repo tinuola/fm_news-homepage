@@ -106,7 +106,7 @@ nav ul {
 
 .main-news__headline {
   grid-area: headline;
-  font-size: 3.75rem;
+  font-size: 3.5rem;
   line-height: 1;
   align-self: center;
 }
@@ -130,6 +130,12 @@ button {
   text-transform: uppercase;
   border: 0;
   padding: 1rem 2.25rem;
+}
+
+@media (max-width: 899px) {
+  .main-news__headline {
+    font-size: 3.25rem;
+  }
 }
 
 @media (max-width: 767px) {
