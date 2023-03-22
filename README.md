@@ -15,7 +15,7 @@ Live Site: [https://tinuola.github.io/fm_news-homepage/](https://tinuola.github.
 
 ### Retrospective
 
--
+- Note about accessibility changes
 
 ### Potential Enhancement(s)
 
@@ -27,6 +27,6 @@ Live Site: [https://tinuola.github.io/fm_news-homepage/](https://tinuola.github.
 - HTML, CSS, JavaScript
   - CSS Grid
 - [A Modern CSS Reset by Andy Bell](https://piccalil.li/blog/a-modern-css-reset/)
-- []()
+- [How to Create an Overlay](https://www.w3schools.com/howto/howto_css_overlay.asp) _(W3Schools)_
 
 _Visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/tinuola) to view other challenges I've completed!_
