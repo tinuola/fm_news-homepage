@@ -78,16 +78,55 @@ header {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
+  /* position: relative; */
 }
 
 .logo {
   width: 50px;
 }
 
+nav {
+  position: relative;
+}
+
 nav ul {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+}
+
+#open-menu,
+#close-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #open-menu {
+    display: block;
+  }
+
+  .menu-icons {
+    position: relative;
+    z-index: 3;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    height: 100%;
+    width: 60%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 10rem;
+    padding-left: 2rem;
+    transition: 0.5s;
+  }
 }
 
 .main-news {
