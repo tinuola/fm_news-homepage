@@ -15,11 +15,10 @@ Live Site: [https://tinuola.github.io/fm_news-homepage/](https://tinuola.github.
 
 ### Retrospective
 
-- Note about accessibility changes
+- I've noticed that some Frontend Mentor challenges have components that fail WCAG standards for use of color. It's a bit puzzling that the design creators choose color combinations that WCAG considers as having poor contrast ratio. In this challenge, I had to modify the colors of the button and the article numbers to pass WAVE's A11Y evaulation tool.
 
 ### Potential Enhancement(s)
 
--
 -
 
 ### Tools & Resources
