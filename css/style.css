@@ -97,9 +97,9 @@ header {
   width: 50px;
 }
 
-nav {
+/* nav {
   position: relative;
-}
+} */
 
 nav ul {
   display: flex;
@@ -109,38 +109,47 @@ nav ul {
 
 #menu-icon {
   display: none;
-  cursor: pointer;
 }
 
 @media (max-width: 600px) {
-  #menu-icon {
-    display: block;
+  /* nav {
+    position: fixed;
+    right: 0;
+    width: 100%;
+  } */
+  .menu-icon-wrapper {
+    position: relative;
+    z-index: 2;
   }
 
-  .menu-icons {
-    position: relative;
-    z-index: 3;
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-show {
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
   }
 
   nav ul {
-    display: none;
-    /* flex-direction: column;
-    justify-content: flex-start;
-    gap: 2rem; */
-    /* height: 100%;
-    width: 60%; */
-    /* height: 100vh;
-    width: 250px; */
-    /* position: fixed; */
-    /* position: absolute;
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    width: 50%;
+    transform: translateX(100%);
     z-index: 1;
-    top: 0;
-    right: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
     background-color: white;
-    overflow-x: hidden;
     padding-top: 9rem;
     padding-left: 2rem;
-    transition: 0.5s; */
+    transition: 0.25s;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 }
 

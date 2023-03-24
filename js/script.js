@@ -1,9 +1,23 @@
-const openMenuBtn = document.querySelector('#open-menu');
-
-const closeMenuBtn = document.querySelector('#close-menu');
+const menuIcon = document.querySelector('#menu-icon');
 
 const menu = document.querySelector('nav ul');
 
-const openIcon = './assets/images/icon-menu.svg';
+const openIconImg = './assets/images/icon-menu.svg';
 
-const closeIcon = './assets/images/icon-menu-close.svg';
+const closeIconImg = './assets/images/icon-menu-close.svg';
+
+const navSlider = () => {
+  menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('nav-show');
+
+    const icon = menuIcon.getAttribute('src');
+
+    if (icon === openIconImg) {
+      menuIcon.setAttribute('src', closeIconImg);
+    } else {
+      menuIcon.setAttribute('src', openIconImg);
+    }
+  });
+};
+
+navSlider();
