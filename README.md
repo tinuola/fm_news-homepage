@@ -27,5 +27,6 @@ Live Site: [https://tinuola.github.io/fm_news-homepage/](https://tinuola.github.
   - CSS Grid
 - [A Modern CSS Reset by Andy Bell](https://piccalil.li/blog/a-modern-css-reset/)
 - [How to Create an Overlay](https://www.w3schools.com/howto/howto_css_overlay.asp) _(W3Schools)_
+- [Overflow-x:hidden; on mobile device not working](https://stackoverflow.com/questions/24193272/overflow-xhidden-on-mobile-device-not-working) _(StackOverflow)_
 
 _Visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/tinuola) to view other challenges I've completed!_
