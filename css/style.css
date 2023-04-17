@@ -77,25 +77,18 @@ main {
   }
 }
 
-@media (min-width: 992px) {
-}
-
-@media (min-width: 1200px) {
-}
-
-/* @media (max-width: 1200px) {
+@media (min-width: 1000px) {
   main {
-      grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50px 1fr auto;
-  grid-template-areas:
-    'header header header'
-    'main main latest'
-    'carousel carousel carousel';
-    max-width: calc(100% - 100px);
-      max-width: calc(100% - 200px);
-  margin: 2rem auto 4rem auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      'header header header'
+      'main main latest'
+      'carousel carousel carousel';
+    -moz-column-gap: 1.875rem;
+    column-gap: 1.875rem;
   }
-} */
+}
 
 /**** Navigation ****/
 
@@ -260,12 +253,6 @@ button:hover {
   }
 }
 
-@media (min-width: 992px) {
-}
-
-@media (min-width: 1200px) {
-}
-
 /**** News ****/
 
 .latest-news {
@@ -330,10 +317,20 @@ button:hover {
   }
 }
 
-@media (min-width: 992px) {
-}
+@media (min-width: 1000px) {
+  .latest-news-items {
+    flex-direction: column;
+  }
 
-@media (min-width: 1200px) {
+  .latest-news-item {
+    flex-basis: 1o0%;
+  }
+
+  .latest-news-item:last-of-type {
+    border: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 
 /**** Carousel (Numbered List) ****/
@@ -364,7 +361,14 @@ button:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
+  .carousel {
+    flex-flow: row nowrap;
+  }
+
+  .carousel-item {
+    flex-basis: 100%;
+  }
 }
 
 .carousel-item img {
@@ -398,7 +402,7 @@ button:hover {
 /**** Footer ****/
 
 .fm-byline-row {
-  padding-bottom: 2rem;
+  padding-bottom: 1.25rem;
 }
 
 .fm-byline {
