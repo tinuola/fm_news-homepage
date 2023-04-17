@@ -3,7 +3,7 @@
   --primary-red: hsl(5, 98%, 46%);
   --primary-orange: hsl(5, 85%, 63%);
   --dark-blue: hsl(240, 100%, 5%);
-  --dark-gray-blue: hsl(236, 13%, 42%);
+  --dark-gray-blue: hsl(237, 13%, 42%);
   --gray-blue: hsl(233, 8%, 79%);
   --off-white: hsl(36, 100%, 99%);
   --font: 'Inter', sans-serif;
@@ -11,7 +11,7 @@
 
 body {
   font-family: var(--font);
-  font-size: 15px;
+  font-size: 0.875rem;
   font-weight: 400;
   display: grid;
   grid-template-rows: 1fr auto;
@@ -287,22 +287,16 @@ button {
 .carousel {
   grid-area: carousel;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-@media (max-width: 767px) {
-  .carousel {
-    gap: 1.5rem;
-  }
+  flex-direction: column;
+  row-gap: 2rem;
 }
 
 .carousel-item {
-  flex: 1;
+  /* flex: 1; */
   display: grid;
-  grid-template-columns: 90px auto;
-  gap: 1rem;
+  grid-template-columns: 100px auto;
+  -moz-column-gap: 1.5rem;
+  column-gap: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -315,17 +309,17 @@ button {
 }
 
 @media (max-width: 767px) {
-  .carousel-item {
+  /* .carousel-item {
     flex: 0;
     flex-basis: 45%;
-  }
+  } */
 }
 
 @media (max-width: 599px) {
-  .carousel-item {
+  /* .carousel-item {
     flex-basis: 100%;
     align-items: stretch;
-  }
+  } */
 }
 
 .carousel-item img {
@@ -333,23 +327,29 @@ button {
 }
 
 .carousel-item__body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 0.75rem; */
 }
 
 .carousel-item__body h2 {
-  font-size: 1.5rem;
-  color: var(--dark-gray-blue);
-  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--gray-blue);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
 }
 
 .carousel-item__body h3 {
   font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .carousel-item__body p {
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: var(--dark-gray-blue);
 }
 
 /**** Footer ****/

@@ -35,18 +35,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Avoid text overflows */
-h1,
-h2,
-h3,
-h4,
-p {
-  /* overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto; */
-}
-
 /* Make media easier to work with */
 img,
 picture,
