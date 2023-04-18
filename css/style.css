@@ -160,6 +160,7 @@ nav ul li:hover {
 @media (min-width: 600px) {
   nav {
     align-items: center;
+    margin-bottom: 3.4375rem;
   }
 
   .logo {
@@ -274,20 +275,20 @@ button:hover {
   margin-bottom: 4rem;
 }
 
-.latest-news h1 {
+.latest-news h2 {
   color: var(--primary-yellow);
   font-size: 2rem;
   margin-bottom: 2.1875rem;
 }
 
-.latest-news-item h2 {
+.latest-news-item h3 {
   font-size: 1.25rem;
   line-height: 1.5rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
 }
 
-.latest-news-item h2:hover {
+.latest-news-item h3:hover {
   color: var(--primary-yellow);
 }
 
