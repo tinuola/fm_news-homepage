@@ -231,7 +231,8 @@ nav ul li:hover {
 }
 
 button {
-  background-color: var(--primary-orange);
+  /* background-color: var(--primary-orange); */
+  background-color: var(--primary-red); /* A11Y */
   color: var(--off-white);
   font-weight: 700;
   font-size: 0.875rem;
@@ -393,7 +394,8 @@ button:hover {
 .carousel-item__body h2 {
   font-size: 2rem;
   line-height: 2rem;
-  color: var(--gray-blue);
+  /* color: var(--gray-blue); */
+  color: var(--dark-gray-blue); /* A11Y */
   font-weight: 700;
   margin-bottom: 0.75rem;
 }
