@@ -11,7 +11,7 @@ const overlay = document.querySelector('.overlay');
 const navSlider = () => {
   menuIcon.addEventListener('click', () => {
     menu.classList.toggle('nav-show');
-    overlay.classList.toggle('overlay-show');
+    // overlay.classList.toggle('overlay-show');
 
     let menuIconSrc = menuIcon.getAttribute('src');
 
