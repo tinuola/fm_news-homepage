@@ -60,8 +60,6 @@ main {
   grid-template-areas:
     'header'
     'news'
-    /* 'main'
-    'latest' */
     'carousel';
   padding: 1.75rem 1rem 5rem 1rem;
   margin: 0 auto;
@@ -73,8 +71,6 @@ main {
     grid-template-areas:
       'header header'
       'news news'
-      /* 'main main'
-      'latest latest' */
       'carousel carousel';
     padding-left: 2rem;
     padding-right: 2rem;
@@ -90,7 +86,6 @@ main {
     grid-template-areas:
       'header header header'
       'news news news'
-      /* 'main main latest' */
       'carousel carousel carousel';
     -moz-column-gap: 1.875rem;
     column-gap: 1.875rem;
@@ -198,24 +193,23 @@ nav ul li:hover {
   margin-bottom: 4rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .all-news {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      'hero hero'
-      'headline blurb';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'main-news main-news latest-news';
+    -moz-column-gap: 1.875rem;
+    column-gap: 1.875rem;
+    margin-bottom: 4.5rem;
   }
 }
 
 /**** Hero / Featured News ****/
 .main-news {
-  /* grid-area: main; */
   margin-bottom: 4rem;
 }
 
 .main-news__hero {
-  /* grid-area: hero; */
   margin-bottom: 1.5rem;
 }
 
@@ -227,7 +221,6 @@ nav ul li:hover {
 }
 
 .main-news__blurb {
-  /* grid-area: blurb; */
   font-size: 1rem;
 }
 
@@ -261,13 +254,17 @@ button:hover {
 }
 
 @media (min-width: 768px) {
-  /* .main-news {
+  .main-news {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       'hero hero'
       'headline blurb';
-  } */
+  }
+
+  .main-news__hero {
+    grid-area: hero;
+  }
 
   .main-news__headline {
     grid-area: headline;
@@ -284,14 +281,19 @@ button:hover {
   }
 }
 
+@media (min-width: 1000px) {
+  .main-news {
+    grid-area: main-news;
+    margin-bottom: 0;
+  }
+}
+
 /**** Latest News ****/
 
 .latest-news {
-  /* grid-area: latest; */
   background-color: var(--dark-blue);
   color: var(--off-white);
   padding: 2rem 1.25rem;
-  /* margin-bottom: 4rem; */
 }
 
 .latest-news h2 {
@@ -349,6 +351,10 @@ button:hover {
 }
 
 @media (min-width: 1000px) {
+  .latest-news {
+    grid-area: latest-news;
+  }
+
   .latest-news-items {
     flex-direction: column;
   }
