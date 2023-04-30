@@ -17,8 +17,10 @@ const navSlider = () => {
 
     if (menuIconSrc === openIconImg) {
       menuIcon.setAttribute('src', closeIconImg);
+      menuIcon.classList.add('menu-icon-shift');
     } else {
       menuIcon.setAttribute('src', openIconImg);
+      menuIcon.classList.remove('menu-icon-shift');
     }
   });
 };
