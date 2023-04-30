@@ -17,14 +17,6 @@ body {
   grid-template-rows: 1fr auto;
 }
 
-html,
-body {
-  /* overflow-x: hidden;  */
-  /* Prevent horizontal scroll */
-  /* position: relative;  */
-  /* Prevent horizontal scroll on mobile*/
-}
-
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
@@ -133,12 +125,14 @@ nav ul {
   box-shadow: 0px 2px 4px #f3f3f3;
 }
 
-nav ul li {
+nav ul li a {
   font-size: 1.125rem;
   line-height: 1.5rem;
+  text-decoration: none;
+  color: inherit;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
   color: var(--primary-orange);
 }
 
@@ -189,7 +183,7 @@ nav ul li:hover {
     transform: translateX(0%);
   }
 
-  nav ul li {
+  nav ul li a {
     font-size: unset;
     line-height: 0;
   }
