@@ -19,8 +19,10 @@ body {
 
 html,
 body {
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  position: relative; /* Prevent horizontal scroll on mobile*/
+  /* overflow-x: hidden;  */
+  /* Prevent horizontal scroll */
+  /* position: relative;  */
+  /* Prevent horizontal scroll on mobile*/
 }
 
 .sr-only {
@@ -36,27 +38,21 @@ body {
 }
 
 .overlay {
-  /* position: fixed; */
-  /* display: none; */
-  /* display: block; */
-  /* width: 100%; */
-  /* height: 100%; */
-  /* top: 0; */
-  /* right: -1000px; */
-  /* left: 0;
-  right: 0;
-  bottom: 0; */
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: -1000px;
   background-color: rgba(0, 0, 0, 0.5);
-  /* z-index: 2; */
 }
 
 .overlay-show {
-  /* display: block; */
+  right: 0;
 }
 
 @media (min-width: 600px) {
   .overlay {
-    /* display: none; */
+    display: none;
   }
 }
 
