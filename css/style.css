@@ -184,15 +184,13 @@ nav ul li:hover {
   }
 
   nav ul {
-    /* position: static; */
-    /* height: 0; */
-    /* width: 100%; */
-    /* padding: 0; */
-    /* justify-content: flex-end; */
+    position: static;
+    height: 0;
+    width: 100%;
+    padding: 0;
     flex-direction: row;
     gap: 2.5rem;
-    /* transform: translateX(0%); */
-    /* transition: unset; */
+    transform: translateX(0%);
   }
 
   nav ul li {
