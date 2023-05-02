@@ -21,7 +21,7 @@ Live Site: [https://tinuola.github.io/fm_news-homepage/](https://tinuola.github.
 
 ### Enhancement(s)
 
-- None planned
+- Add animated effect to button and nav links hover states
 
 ### Tools & Resources
 
